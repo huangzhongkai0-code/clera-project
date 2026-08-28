@@ -1,0 +1,4 @@
+workbook_tools/node_modules/
+workbook_previews/
+*.inspect.ndjson
+
