@@ -82,6 +82,18 @@
     position:relative; z-index:1;
   }
   .hero .meta strong{color:var(--paper); font-weight:500;}
+  .hero-actions{
+    margin-top:28px; display:flex; gap:12px; flex-wrap:wrap;
+    position:relative; z-index:1;
+  }
+  .hero-actions a{
+    font-family:'IBM Plex Mono', monospace; font-size:13px;
+    text-decoration:none; padding:12px 18px; border-radius:2px;
+    background:var(--paper); color:var(--ink);
+  }
+  .hero-actions a.secondary{
+    background:transparent; color:var(--paper); border:1px solid var(--line);
+  }
 
   /* ---------- VITALS STRIP (signature element) ---------- */
   .vitals{
@@ -361,6 +373,10 @@
       <span><strong>Team:</strong> 7 (Group 31)</span>
       <span><strong>Period:</strong> Jul 2026</span>
     </div>
+    <div class="hero-actions">
+      <a href="#my-contribution">View my contribution</a>
+      <a class="secondary" href="financial-model-commercial-viability.pdf" target="_blank" rel="noopener">Read financial analysis (PDF)</a>
+    </div>
   </header>
 
   <!-- VITALS STRIP -->
@@ -526,12 +542,13 @@
   </section>
 
   <!-- MY ROLE — editable placeholder -->
-  <section>
+  <section id="my-contribution">
     <div class="eyebrow">05 — My Contribution</div>
     <h2>What I owned on this project.</h2>
     <div class="role-box">
       <div class="eyebrow">Section 3.2 — Financial Model &amp; Commercial Viability</div>
       <p>Built the B2B2C revenue and cost model underpinning the business case: derived the £24,000 base-case annual subscription (with £12K/£36K sensitivity scenarios) from a per-patient sense-check against RPM SaaS benchmarks (MedM Care, HealthArc), modelled the COGS/fixed-cost split behind a 78.1% gross margin, and produced the three-year P&amp;L forecast — revenue scaling £72K → £192K → £360K as adoption grows from 3 to 15 providers, with EBITDA losses narrowing from £(166)K to £(140)K and a £300K equity / £75K grant funding plan keeping cash positive throughout.</p>
+      <p style="margin-top:12px;"><strong>Model status:</strong> These figures are student-built base-case forecasts for commercial viability testing, not historical company results. The workbook includes downside and upside pricing scenarios and should be read as an illustrative planning model.</p>
       <div class="role-links">
         <a href="financial-model-commercial-viability.pdf" target="_blank" rel="noopener">→ Read the write-up (PDF)</a>
         <a href="assets/financial-model.xlsx" target="_blank" rel="noopener">→ Download the live model (XLSX)</a>
@@ -555,7 +572,6 @@
       <h3>Full business case, financial model and references available on request.</h3>
       <div>
         <a class="btn" href="financial-model-commercial-viability.pdf" target="_blank" rel="noopener">Read my section (PDF) ↗</a>
-        <a class="btn ghost" href="mailto:you@example.com">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
